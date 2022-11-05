@@ -3,6 +3,11 @@
      |      |
      D ---- C
      
+For forwarding the packets from source to destination:
+     Header [src : dest1 : dest2]
+     if dest2 == 0:
+          then the final destination would be dest 1
+
 for A :
  1. A -- B  = Header[A:B:0]
  2. A -- D  = Header[A:D:0]

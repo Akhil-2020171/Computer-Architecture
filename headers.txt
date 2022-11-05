@@ -1,0 +1,30 @@
+    A ---- B
+    |      |
+    |      |
+    D ---- C
+     
+For forwarding the packets from source to destination:
+    Header [src : dest1 : dest2]
+    if dest2 == 0:
+        then the final destination would be dest 1
+
+for A :
+    1. A -- B  = Header[A:B:0]
+    2. A -- D  = Header[A:D:0]
+    3. A -- C  = Header[A:B:C]
+ 
+for B :
+    1. B -- A  = Header[B:A:0]
+    2. B -- D  = Header[B:A:D]
+    3. B -- C  = Header[B:C:0]
+
+for C :
+    1. C -- B  = Header[C:B:0]
+    2. C -- D  = Header[C:D:0]
+    3. C -- A  = Header[C:D:A]
+
+for D :
+    1. D -- A  = Header[D:A:0]
+    2. D -- C  = Header[D:C:0]
+    3. D -- B  = Header[D:C:B]
+    

@@ -1,6 +1,12 @@
 public class PE{
-    int[] data;
-    port localinput;
-    port localoutput;
-
+    String[] data;
+    port connect;
 }
+
+class PEA extends PE{}
+
+class PEB extends PE{}
+
+class PEC extends PE{}
+
+class PED extends PE{}

@@ -1,0 +1,303 @@
+Data has been divided in 12 packets , each of 8 bits
+
+Data has been entered in the NOC. The source of the data is PE 1 and the destination is PE 3
+Cycle starts for this data transaction at 10
+
+     *     At cycle : 11  --  Data packet : 01110101 transfered from 1 to A
+     *     At cycle : 12  --  Data packet : 01110101 transfered from A to C
+     *     At cycle : 13  --  Data packet : 01110101 transfered from B to C
+     *     At cycle : 14  --  Data packet : 01110101 transfered from C to 3
+
+     *     At cycle : 15  --  Data packet : 11000101 transfered from 1 to A
+     *     At cycle : 16  --  Data packet : 11000101 transfered from A to C
+     *     At cycle : 17  --  Data packet : 11000101 transfered from B to C
+     *     At cycle : 18  --  Data packet : 11000101 transfered from C to 3
+
+     *     At cycle : 19  --  Data packet : 11010010 transfered from 1 to A
+     *     At cycle : 20  --  Data packet : 11010010 transfered from A to C
+     *     At cycle : 21  --  Data packet : 11010010 transfered from B to C
+     *     At cycle : 22  --  Data packet : 11010010 transfered from C to 3
+
+     *     At cycle : 23  --  Data packet : 11010101 transfered from 1 to A
+     *     At cycle : 24  --  Data packet : 11010101 transfered from A to C
+     *     At cycle : 25  --  Data packet : 11010101 transfered from B to C
+     *     At cycle : 26  --  Data packet : 11010101 transfered from C to 3
+
+     *     At cycle : 27  --  Data packet : 01110101 transfered from 1 to A
+     *     At cycle : 28  --  Data packet : 01110101 transfered from A to C
+     *     At cycle : 29  --  Data packet : 01110101 transfered from B to C
+     *     At cycle : 30  --  Data packet : 01110101 transfered from C to 3
+
+     *     At cycle : 31  --  Data packet : 11000101 transfered from 1 to A
+     *     At cycle : 32  --  Data packet : 11000101 transfered from A to C
+     *     At cycle : 33  --  Data packet : 11000101 transfered from B to C
+     *     At cycle : 34  --  Data packet : 11000101 transfered from C to 3
+
+     *     At cycle : 35  --  Data packet : 11010010 transfered from 1 to A
+     *     At cycle : 36  --  Data packet : 11010010 transfered from A to C
+     *     At cycle : 37  --  Data packet : 11010010 transfered from B to C
+     *     At cycle : 38  --  Data packet : 11010010 transfered from C to 3
+
+     *     At cycle : 39  --  Data packet : 11010101 transfered from 1 to A
+     *     At cycle : 40  --  Data packet : 11010101 transfered from A to C
+     *     At cycle : 41  --  Data packet : 11010101 transfered from B to C
+     *     At cycle : 42  --  Data packet : 11010101 transfered from C to 3
+
+     *     At cycle : 43  --  Data packet : 01110101 transfered from 1 to A
+     *     At cycle : 44  --  Data packet : 01110101 transfered from A to C
+     *     At cycle : 45  --  Data packet : 01110101 transfered from B to C
+     *     At cycle : 46  --  Data packet : 01110101 transfered from C to 3
+
+     *     At cycle : 47  --  Data packet : 11000101 transfered from 1 to A
+     *     At cycle : 48  --  Data packet : 11000101 transfered from A to C
+     *     At cycle : 49  --  Data packet : 11000101 transfered from B to C
+     *     At cycle : 50  --  Data packet : 11000101 transfered from C to 3
+
+     *     At cycle : 51  --  Data packet : 11010010 transfered from 1 to A
+     *     At cycle : 52  --  Data packet : 11010010 transfered from A to C
+     *     At cycle : 53  --  Data packet : 11010010 transfered from B to C
+     *     At cycle : 54  --  Data packet : 11010010 transfered from C to 3
+
+     *     At cycle : 55  --  Data packet : 11010101 transfered from 1 to A
+     *     At cycle : 56  --  Data packet : 11010101 transfered from A to C
+     *     At cycle : 57  --  Data packet : 11010101 transfered from B to C
+     *     At cycle : 58  --  Data packet : 11010101 transfered from C to 3
+
+Data : 011101011100010111010010110101010111010111000101110100101101010101110101110001011101001011010101 has been completed transfered from PE 1 to PE 3
+
+Data has been entered in the NOC. The source of the data is PE 1 and the destination is PE 2
+Cycle starts for this data transaction at 20
+
+     *     At cycle : 21  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 22  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 23  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 24  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 25  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 26  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 27  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 28  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 29  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 30  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 31  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 32  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 33  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 34  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 35  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 36  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 37  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 38  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 39  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 40  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 41  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 42  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 43  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 44  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 45  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 46  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 47  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 48  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 49  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 50  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 51  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 52  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 53  --  Data packet : 01010101 transfered from B to 2
+
+     *     At cycle : 54  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 55  --  Data packet : 01010101 transfered from A to B
+     *     At cycle : 56  --  Data packet : 01010101 transfered from B to 2
+
+Data : 010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101 has been completed transfered from PE 1 to PE 2
+
+Data has been entered in the NOC. The source of the data is PE 1 and the destination is PE 4
+Cycle starts for this data transaction at 20
+
+     *     At cycle : 21  --  Data packet : 11011001 transfered from 1 to A
+     *     At cycle : 22  --  Data packet : 11011001 transfered from A to D
+     *     At cycle : 23  --  Data packet : 11011001 transfered from D to 4
+
+     *     At cycle : 24  --  Data packet : 00101110 transfered from 1 to A
+     *     At cycle : 25  --  Data packet : 00101110 transfered from A to D
+     *     At cycle : 26  --  Data packet : 00101110 transfered from D to 4
+
+     *     At cycle : 27  --  Data packet : 10001010 transfered from 1 to A
+     *     At cycle : 28  --  Data packet : 10001010 transfered from A to D
+     *     At cycle : 29  --  Data packet : 10001010 transfered from D to 4
+
+     *     At cycle : 30  --  Data packet : 11110100 transfered from 1 to A
+     *     At cycle : 31  --  Data packet : 11110100 transfered from A to D
+     *     At cycle : 32  --  Data packet : 11110100 transfered from D to 4
+
+     *     At cycle : 33  --  Data packet : 01010111 transfered from 1 to A
+     *     At cycle : 34  --  Data packet : 01010111 transfered from A to D
+     *     At cycle : 35  --  Data packet : 01010111 transfered from D to 4
+
+     *     At cycle : 36  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 37  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 38  --  Data packet : 01010101 transfered from D to 4
+
+     *     At cycle : 39  --  Data packet : 11001101 transfered from 1 to A
+     *     At cycle : 40  --  Data packet : 11001101 transfered from A to D
+     *     At cycle : 41  --  Data packet : 11001101 transfered from D to 4
+
+     *     At cycle : 42  --  Data packet : 00101101 transfered from 1 to A
+     *     At cycle : 43  --  Data packet : 00101101 transfered from A to D
+     *     At cycle : 44  --  Data packet : 00101101 transfered from D to 4
+
+     *     At cycle : 45  --  Data packet : 00101000 transfered from 1 to A
+     *     At cycle : 46  --  Data packet : 00101000 transfered from A to D
+     *     At cycle : 47  --  Data packet : 00101000 transfered from D to 4
+
+     *     At cycle : 48  --  Data packet : 10111010 transfered from 1 to A
+     *     At cycle : 49  --  Data packet : 10111010 transfered from A to D
+     *     At cycle : 50  --  Data packet : 10111010 transfered from D to 4
+
+     *     At cycle : 51  --  Data packet : 11101010 transfered from 1 to A
+     *     At cycle : 52  --  Data packet : 11101010 transfered from A to D
+     *     At cycle : 53  --  Data packet : 11101010 transfered from D to 4
+
+     *     At cycle : 54  --  Data packet : 01010101 transfered from 1 to A
+     *     At cycle : 55  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 56  --  Data packet : 01010101 transfered from D to 4
+
+Data : 110110010010111010001010111101000101011101010101110011010010110100101000101110101110101001010101 has been completed transfered from PE 1 to PE 4
+
+Data has been entered in the NOC. The source of the data is PE 2 and the destination is PE 4
+Cycle starts for this data transaction at 30
+
+     *     At cycle : 31  --  Data packet : 11010100 transfered from 2 to B
+     *     At cycle : 32  --  Data packet : 11010100 transfered from B to A
+     *     At cycle : 33  --  Data packet : 11010100 transfered from A to D
+     *     At cycle : 34  --  Data packet : 11010100 transfered from D to 4
+
+     *     At cycle : 35  --  Data packet : 01010101 transfered from 2 to B
+     *     At cycle : 36  --  Data packet : 01010101 transfered from B to A
+     *     At cycle : 37  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 38  --  Data packet : 01010101 transfered from D to 4
+
+     *     At cycle : 39  --  Data packet : 01010101 transfered from 2 to B
+     *     At cycle : 40  --  Data packet : 01010101 transfered from B to A
+     *     At cycle : 41  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 42  --  Data packet : 01010101 transfered from D to 4
+
+     *     At cycle : 43  --  Data packet : 01010101 transfered from 2 to B
+     *     At cycle : 44  --  Data packet : 01010101 transfered from B to A
+     *     At cycle : 45  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 46  --  Data packet : 01010101 transfered from D to 4
+
+     *     At cycle : 47  --  Data packet : 01010000 transfered from 2 to B
+     *     At cycle : 48  --  Data packet : 01010000 transfered from B to A
+     *     At cycle : 49  --  Data packet : 01010000 transfered from A to D
+     *     At cycle : 50  --  Data packet : 01010000 transfered from D to 4
+
+     *     At cycle : 51  --  Data packet : 01011110 transfered from 2 to B
+     *     At cycle : 52  --  Data packet : 01011110 transfered from B to A
+     *     At cycle : 53  --  Data packet : 01011110 transfered from A to D
+     *     At cycle : 54  --  Data packet : 01011110 transfered from D to 4
+
+     *     At cycle : 55  --  Data packet : 11010111 transfered from 2 to B
+     *     At cycle : 56  --  Data packet : 11010111 transfered from B to A
+     *     At cycle : 57  --  Data packet : 11010111 transfered from A to D
+     *     At cycle : 58  --  Data packet : 11010111 transfered from D to 4
+
+     *     At cycle : 59  --  Data packet : 01010100 transfered from 2 to B
+     *     At cycle : 60  --  Data packet : 01010100 transfered from B to A
+     *     At cycle : 61  --  Data packet : 01010100 transfered from A to D
+     *     At cycle : 62  --  Data packet : 01010100 transfered from D to 4
+
+     *     At cycle : 63  --  Data packet : 01010111 transfered from 2 to B
+     *     At cycle : 64  --  Data packet : 01010111 transfered from B to A
+     *     At cycle : 65  --  Data packet : 01010111 transfered from A to D
+     *     At cycle : 66  --  Data packet : 01010111 transfered from D to 4
+
+     *     At cycle : 67  --  Data packet : 01010100 transfered from 2 to B
+     *     At cycle : 68  --  Data packet : 01010100 transfered from B to A
+     *     At cycle : 69  --  Data packet : 01010100 transfered from A to D
+     *     At cycle : 70  --  Data packet : 01010100 transfered from D to 4
+
+     *     At cycle : 71  --  Data packet : 10101110 transfered from 2 to B
+     *     At cycle : 72  --  Data packet : 10101110 transfered from B to A
+     *     At cycle : 73  --  Data packet : 10101110 transfered from A to D
+     *     At cycle : 74  --  Data packet : 10101110 transfered from D to 4
+
+     *     At cycle : 75  --  Data packet : 10111111 transfered from 2 to B
+     *     At cycle : 76  --  Data packet : 10111111 transfered from B to A
+     *     At cycle : 77  --  Data packet : 10111111 transfered from A to D
+     *     At cycle : 78  --  Data packet : 10111111 transfered from D to 4
+
+Data : 110101000101010101010101010101010101000001011110110101110101010001010111010101001010111010111111 has been completed transfered from PE 2 to PE 4
+
+Data has been entered in the NOC. The source of the data is PE 2 and the destination is PE 4
+Cycle starts for this data transaction at 50
+
+     *     At cycle : 51  --  Data packet : 11110010 transfered from 2 to B
+     *     At cycle : 52  --  Data packet : 11110010 transfered from B to A
+     *     At cycle : 53  --  Data packet : 11110010 transfered from A to D
+     *     At cycle : 54  --  Data packet : 11110010 transfered from D to 4
+
+     *     At cycle : 55  --  Data packet : 11001010 transfered from 2 to B
+     *     At cycle : 56  --  Data packet : 11001010 transfered from B to A
+     *     At cycle : 57  --  Data packet : 11001010 transfered from A to D
+     *     At cycle : 58  --  Data packet : 11001010 transfered from D to 4
+
+     *     At cycle : 59  --  Data packet : 00100101 transfered from 2 to B
+     *     At cycle : 60  --  Data packet : 00100101 transfered from B to A
+     *     At cycle : 61  --  Data packet : 00100101 transfered from A to D
+     *     At cycle : 62  --  Data packet : 00100101 transfered from D to 4
+
+     *     At cycle : 63  --  Data packet : 01010101 transfered from 2 to B
+     *     At cycle : 64  --  Data packet : 01010101 transfered from B to A
+     *     At cycle : 65  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 66  --  Data packet : 01010101 transfered from D to 4
+
+     *     At cycle : 67  --  Data packet : 11110010 transfered from 2 to B
+     *     At cycle : 68  --  Data packet : 11110010 transfered from B to A
+     *     At cycle : 69  --  Data packet : 11110010 transfered from A to D
+     *     At cycle : 70  --  Data packet : 11110010 transfered from D to 4
+
+     *     At cycle : 71  --  Data packet : 11001010 transfered from 2 to B
+     *     At cycle : 72  --  Data packet : 11001010 transfered from B to A
+     *     At cycle : 73  --  Data packet : 11001010 transfered from A to D
+     *     At cycle : 74  --  Data packet : 11001010 transfered from D to 4
+
+     *     At cycle : 75  --  Data packet : 00100101 transfered from 2 to B
+     *     At cycle : 76  --  Data packet : 00100101 transfered from B to A
+     *     At cycle : 77  --  Data packet : 00100101 transfered from A to D
+     *     At cycle : 78  --  Data packet : 00100101 transfered from D to 4
+
+     *     At cycle : 79  --  Data packet : 01010101 transfered from 2 to B
+     *     At cycle : 80  --  Data packet : 01010101 transfered from B to A
+     *     At cycle : 81  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 82  --  Data packet : 01010101 transfered from D to 4
+
+     *     At cycle : 83  --  Data packet : 11110010 transfered from 2 to B
+     *     At cycle : 84  --  Data packet : 11110010 transfered from B to A
+     *     At cycle : 85  --  Data packet : 11110010 transfered from A to D
+     *     At cycle : 86  --  Data packet : 11110010 transfered from D to 4
+
+     *     At cycle : 87  --  Data packet : 11001010 transfered from 2 to B
+     *     At cycle : 88  --  Data packet : 11001010 transfered from B to A
+     *     At cycle : 89  --  Data packet : 11001010 transfered from A to D
+     *     At cycle : 90  --  Data packet : 11001010 transfered from D to 4
+
+     *     At cycle : 91  --  Data packet : 00100101 transfered from 2 to B
+     *     At cycle : 92  --  Data packet : 00100101 transfered from B to A
+     *     At cycle : 93  --  Data packet : 00100101 transfered from A to D
+     *     At cycle : 94  --  Data packet : 00100101 transfered from D to 4
+
+     *     At cycle : 95  --  Data packet : 01010101 transfered from 2 to B
+     *     At cycle : 96  --  Data packet : 01010101 transfered from B to A
+     *     At cycle : 97  --  Data packet : 01010101 transfered from A to D
+     *     At cycle : 98  --  Data packet : 01010101 transfered from D to 4
+
+Data : 111100101100101000100101010101011111001011001010001001010101010111110010110010100010010101010101 has been completed transfered from PE 2 to PE 4
+

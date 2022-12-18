@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main{
+    public static boolean isXY;
     public static FileWriter writer;
     public static void main(String[] args) throws IOException {
         // Reading file
@@ -39,6 +40,14 @@ public class Main{
         writer = new FileWriter("Log.txt"); // Writting Log File
         writer.write("Data has been divided in 12 packets , each of 8 bits\n");
         writer.write('\n');
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Choose routing algorithm (XY/YX) : ");
+        String route = input.nextLine();
+        if(route.equals("XY")) isXY = true;
+        else if(route.equals("YX")) isXY = false;
+        else System.out.println("Run the simulation again!");
+
         for(int j = 0; j<numberOfLines ; j++){
             String[] data = {inputPayload[j].cycle, inputPayload[j].Src, inputPayload[j].Dst, inputPayload[j].data};
             process process = new process(data);
@@ -48,6 +57,7 @@ public class Main{
         writer.close();
         sc1.close();
         sc2.close();
+        input.close();
     }
 }
 
@@ -83,28 +93,28 @@ class process{
                 RouterA routerA = new RouterA(payload);
                 pointer = "A";
                 cycleNum++;
-                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data packet : "+data+" transfered from "+head[0]+" to "+pointer+'\n');
+                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data flit : "+Arrays.toString(payload[0])+" "+data+" " +Arrays.toString(payload[2])+" transfered from "+head[0]+" to "+pointer+'\n');
                 routerA.switchallocator();
             }
             if(head[0].equals("2")){
                 RouterB routerB = new RouterB(payload);
                 pointer = "B";
                 cycleNum++;
-                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data packet : "+data+" transfered from "+head[0]+" to "+pointer+'\n');
+                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data flit : "+Arrays.toString(payload[0])+" "+data+" " +Arrays.toString(payload[2])+" transfered from "+head[0]+" to "+pointer+'\n');
                 routerB.switchallocator();
             }
             if(head[0].equals("3")){
                 RouterC routerC = new RouterC(payload);
                 pointer = "C";
                 cycleNum++;
-                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data packet : "+data+" transfered from "+head[0]+" to "+pointer+'\n');
+                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data flit : "+Arrays.toString(payload[0])+" "+data+" " +Arrays.toString(payload[2])+" transfered from "+head[0]+" to "+pointer+'\n');
                 routerC.switchallocator();
             }
             if(head[0].equals("4")){
                 RouterD routerD = new RouterD(payload);
                 pointer = "D";
                 cycleNum++;
-                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data packet : "+data+" transfered from "+head[0]+" to "+pointer+'\n');
+                Main.writer.write("     *     "+"At cycle : "+cycleNum+"  --  "+"Data flit : "+Arrays.toString(payload[0])+" "+data+" " +Arrays.toString(payload[2])+" transfered from "+head[0]+" to "+pointer+'\n');
                 routerD.switchallocator();
             }
 

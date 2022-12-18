@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Arrays;
 
 public class RouterB {
     String[][] payload;
@@ -20,7 +21,7 @@ public class RouterB {
             RouterA routerA = new RouterA(payload);
             process.pointer = "A";
             process.cycleNum++;
-            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data packet : "+this.packet+" transfered from B"+" to "+process.pointer+'\n');
+            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data flit : "+Arrays.toString(this.header)+" "+this.packet+" " +Arrays.toString(this.tail)+" transfered from B"+" to "+process.pointer+'\n');
             routerA.switchallocator();
         }
 
@@ -28,7 +29,7 @@ public class RouterB {
             // System.out.println("Data transfer from B to 2"); // increament cycle by 1
             process.pointer = "2";
             process.cycleNum++;
-            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data packet : "+this.packet+" transfered from B"+" to "+process.pointer+'\n');
+            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data flit : "+Arrays.toString(this.header)+" "+this.packet+" " +Arrays.toString(this.tail)+" transfered from B"+" to "+process.pointer+'\n');
             Main.writer.write('\n');
         }
         if(dst.equals("3")){
@@ -36,17 +37,28 @@ public class RouterB {
             RouterC routerC = new RouterC(payload); // increament cycle by 1
             process.pointer = "C";
             process.cycleNum++;
-            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data packet : "+this.packet+" transfered from B"+" to "+process.pointer+'\n');
+            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data flit : "+Arrays.toString(this.header)+" "+this.packet+" " +Arrays.toString(this.tail)+" transfered from B"+" to "+process.pointer+'\n');
             routerC.switchallocator();
             
         }
         if(dst.equals("4")){
-            // System.out.println("Data transfer from B to A");
-            RouterA routerA = new RouterA(payload); // increament cycle by 1
-            process.pointer = "A";
-            process.cycleNum++;
-            Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data packet : "+this.packet+" transfered from B"+" to "+process.pointer+'\n');
-            routerA.switchallocator();
+            
+            if(Main.isXY){
+                // System.out.println("Data transfer from B to A");
+                RouterA routerA = new RouterA(payload); // increament cycle by 1
+                process.pointer = "A";
+                process.cycleNum++;
+                Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data flit : "+Arrays.toString(this.header)+" "+this.packet+" " +Arrays.toString(this.tail)+" transfered from B"+" to "+process.pointer+'\n');
+                routerA.switchallocator();
+            }
+            else{
+                // System.out.println("Data transfer from B to C");
+                RouterC routerC = new RouterC(payload); // increament cycle by 1
+                process.pointer = "C";
+                process.cycleNum++;
+                Main.writer.write("     *     "+"At cycle : "+process.cycleNum+"  --  "+"Data flit : "+Arrays.toString(this.header)+" "+this.packet+" " +Arrays.toString(this.tail)+" transfered from B"+" to "+process.pointer+'\n');
+                routerC.switchallocator();
+            }
         }
     }
 }

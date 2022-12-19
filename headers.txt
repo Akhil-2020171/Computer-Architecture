@@ -8,5 +8,7 @@
    /        \
   4          3
 
+In this, the numbers 1,2,3,4 represent the PEs, and the alphabets A,B,C,D represent the routers
+
 For forwarding the packets from source to destination:
     Header [src : dest]

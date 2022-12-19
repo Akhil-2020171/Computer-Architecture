@@ -18,6 +18,8 @@ lst = []
 for i in range(counter):
     lst.append(0)
     
+packet = []
+    
 with open("Log.txt",'r') as f:
     indexcount = 0
     while True:
@@ -34,6 +36,17 @@ with open("Log.txt",'r') as f:
                 lst[indexcount] = 36
             
             indexcount = indexcount + 1
+        if(len(line)>120):
+            line = line.split(" ")
+            packet.append(line[2])
+            pass
+            
+
+with open("Latency_Graph_info.txt",'w') as f:
+    for i in range(len(packet)):
+        line = str(i) + " : " + packet[i]
+        f.write(line+'\n')
+
 
 x = np.arange(0,counter,1)
 plt.figure()
